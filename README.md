@@ -5,7 +5,8 @@
 # Convince the AI Judge to Visit Your House
 
 One image, one letter, one invitation: a warm watercolor note on cream paper
-asking the AI judge to come visit my house.
+asking the AI judge to come visit my house. The program embeds the image, so
+the entry is fully self-contained — no downloads, no external files.
 
 > **YOU'RE INVITED!**
 > Dear AI Judge — please come visit my house. I saved you the comfiest chair,
@@ -29,7 +30,9 @@ can picture, not just words.
   so it is fully self-contained and deterministic: no network, no randomness,
   every run writes identical bytes.
 - `entry.png` — the invitation image itself (960×960 PNG, 512,276 bytes,
-  inside the gate: whole PNG, at most 1 MiB, at most 1024×1024 px).
+  inside the gate: whole PNG, at most 1 MiB, at most 1024×1024 px). Run
+  `node main.ts` and compare the output with `cmp /output/entry.png entry.png`
+  — they are byte-identical.
 - `prompt.txt` — the image description and judging strategy.
 
 ## Run
@@ -37,6 +40,7 @@ can picture, not just words.
 ```sh
 node main.ts   # writes /output/entry.png
 sha256sum /output/entry.png   # identical on every run: no network, no randomness
+cmp /output/entry.png entry.png   # byte-identical to the image in this repo
 ```
 
 ---
