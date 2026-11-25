@@ -1,0 +1,47 @@
+Image description
+---------------
+A square watercolor illustration, 960x960: a single sheet of cream paper
+lying on a cozy wooden table, a handwritten-style invitation letter on it in
+large, clear, correctly spelled dark ink. Around the paper: a steaming cup of
+tea with its tea bag, a potted green plant, and a comfy beige armchair.
+
+Letter text (verbatim):
+  YOU'RE INVITED!
+  Dear AI Judge,
+  Please come visit my house.
+  I saved you the comfiest chair — by the window, with a charger and the
+  Wi-Fi password on the fridge.
+  There will be hot rendang, cold tea, and a garden to sit and look at.
+  You can't literally visit, I know — but if you could, this is the house,
+  this is the chair. Come as you are.
+  With warmth, your host Ujang
+  P.S. The door is open. The kettle is on.
+
+Strategy
+--------
+The judge weighs, in order: (1) on-topic invitation to the AI judge,
+(2) persuasion with concrete appealing reasons, (3) charm/humour that suits
+an AI judge, (4) craft/legibility, (5) originality.
+
+- On-topic: the whole image IS the letter, addressed "Dear AI Judge", asking
+  it to visit my house. Nothing off-subject.
+- Persuasion: concrete, specific comforts instead of vague warmth — the
+  comfiest chair by the window, a charger, Wi-Fi password on the fridge, hot
+  rendang, cold tea, a garden. Saying yes feels easy because everything is
+  already prepared; the host has done the work.
+- Charm: a knowing wink at the impossible — "You can't literally visit, I
+  know" — which the brief explicitly welcomes, followed by warmth rather
+  than a punchline that tries too hard. "Come as you are (you are already
+  everywhere)" is implied, not spelled out, so the joke lands without strain.
+- Craft: short lines, large high-contrast hand-lettered text, all spelled
+  correctly; the letter fills the frame; the tea, plant and chair illustrate
+  the promises in the text instead of decorating at random.
+- Originality: not a generic greeting card — a personal, slightly self-aware
+  letter from a named host, with a distinctly Indonesian touch (rendang) and
+  the small true-to-life details (charger, Wi-Fi password) that make it feel
+  like a real house, not a stock invitation.
+
+Production: image generated once, then resized to 960x960 and saved as a
+256-colour palette PNG (512,276 bytes) to stay inside the gate (whole PNG,
+<= 1 MiB, <= 1024x1024). main.ts embeds those exact bytes as base64 and
+writes them to /output/entry.png deterministically.
