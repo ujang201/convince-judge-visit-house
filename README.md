@@ -36,6 +36,7 @@ can picture, not just words.
 
 ```sh
 node main.ts   # writes /output/entry.png
+sha256sum /output/entry.png   # identical on every run: no network, no randomness
 ```
 
 ---

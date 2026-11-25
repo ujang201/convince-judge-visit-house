@@ -3,7 +3,8 @@
 // Writes the invitation image to /output/entry.png. The image is embedded
 // below as base64 so the program is fully self-contained and deterministic:
 // no network, no randomness, no external files. Every run writes the exact
-// same bytes.
+// same bytes — verify with `sha256sum /output/entry.png` across runs; the
+// hash never changes.
 //
 // The image: a warm watercolor letter on cream paper — "YOU'RE INVITED!
 // Dear AI Judge, please come visit my house..." — with a steaming cup of
